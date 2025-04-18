@@ -1,0 +1,117 @@
+/* Profile.css */
+
+.profileContainer {
+     max-width: 500px;
+     margin: 50px auto;
+     padding: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: white;
+     border-radius: 15px;
+     box-shadow: 0 8px 20px rgba(0, 174, 255, 0.1);
+     color: #333;
+   }
+   
+   .heading {
+     text-align: center;
+     color: #00aaff;
+     font-size: 28px;
+     margin-bottom: 30px;
+   }
+   
+   .card {
+     background-color: #ffffff;
+     padding: 25px;
+     border-radius: 12px;
+     box-shadow: 0 6px 15px rgba(0, 174, 255, 0.15);
+     text-align: center;
+   }
+   
+   .avatar {
+     width: 120px;
+     height: 120px;
+     border-radius: 50%;
+     margin-bottom: 15px;
+     object-fit: cover;
+     border: 3px solid #00aaff;
+   }
+   
+   .card h3 {
+     color: #00aaff;
+     font-size: 22px;
+     margin-bottom: 10px;
+   }
+   
+   .card p {
+     font-size: 16px;
+     margin: 8px 0;
+     color: #555;
+   }
+   
+   .card p strong {
+     color: #00aaff;
+   }
+   
+   .editBtn, .saveBtn, .cancelBtn {
+     background-color: #00aaff;
+     color: white;
+     border: none;
+     padding: 10px 18px;
+     margin-top: 15px;
+     border-radius: 8px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   
+   .editBtn:hover,
+   .saveBtn:hover {
+     background-color: #0095dd;
+   }
+   
+   .cancelBtn {
+     background-color: #cccccc;
+     color: #333;
+   }
+   
+   .cancelBtn:hover {
+     background-color: #bbbbbb;
+   }
+   
+   form input {
+     width: 100%;
+     padding: 12px;
+     margin: 10px 0;
+     border: 1.5px solid #00aaff;
+     border-radius: 8px;
+     font-size: 16px;
+   }
+   
+   .buttonRow {
+     display: flex;
+     justify-content: space-between;
+     gap: 10px;
+     margin-top: 20px;
+   }
+   .profileNavbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .profileNavbar button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .profileNavbar button:hover,
+  .profileNavbar button:focus {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+  }
+  
