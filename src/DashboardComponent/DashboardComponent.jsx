@@ -1,6 +1,8 @@
 import React, { useState,useEffect } from 'react'
 import axios from "axios";
 
+import "./DashboardComponent.css";
+
 import NavBarComponent from '../NavBarComponent/NavBarComponent'
 import FilterComponent from './FilterComponent'
 import RoomDisplayComponent from './RoomDisplayComponent'
@@ -83,17 +85,23 @@ const DashboardComponent = () => {
 
   return (
     <>
-      <NavBarComponent/>
-      <div className="dashboard-container" style={{ display: 'flex', gap: '20px', padding: '20px' }}>
-        <div className="sidebar" style={{ flex: '1' }}>
+      <NavBarComponent />
+
+      {/* Dashboard Container */}
+      <div className="dashboard-container">
+        {/* Sidebar */}
+        <div className="sidebar">
           <FilterComponent applyFilters={applyFilters} />
         </div>
-        <div className="main-content" style={{ flex: '3' }}>
+
+        {/* Main Content */}
+        <div className="main-content">
           <RoomDisplayComponent rooms={filteredRooms} />
         </div>
       </div>
+
     </>
-  )
+  );
 }
 
 export default DashboardComponent

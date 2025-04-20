@@ -1,0 +1,48 @@
+/* Common Styles */
+.dashboard-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .sidebar {
+    border-radius: 20px;
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .main-content {
+    flex: 3 1 100%;
+    max-width: 100%;
+  }
+  
+  /* Desktop Layout (for larger screens) */
+  @media (min-width: 769px) {
+    .dashboard-container {
+      flex-direction: row;
+    }
+  
+    .sidebar {
+      flex: 1;
+    }
+  
+    .main-content {
+      flex: 3;
+    }
+  }
+  
+  /* Mobile Layout (for smaller screens) */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+  
+    .sidebar,
+    .main-content {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  

@@ -29,84 +29,90 @@ const FilterComponent = ({ applyFilters }) => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', padding: '16px' }}>
-      <label>Room Type:</label>
-      <select value={roomType} onChange={(e) => setRoomType(e.target.value)}>
-        <option value="">All</option>
-        <option value="Studio">Studio</option>
-        <option value="1BHK">1 BHK</option>
-        <option value="2BHK">2 BHK</option>
-        <option value="3BHK">3 BHK</option>
-      </select>
+    <div className="d-flex flex-column gap-3 p-3 border rounded shadow-sm bg-light">
+      <div>
+        <label className="form-label">Room Type:</label>
+        <select
+          className="form-select"
+          value={roomType}
+          onChange={(e) => setRoomType(e.target.value)}
+        >
+          <option value="">All</option>
+          <option value="Studio">Studio</option>
+          <option value="1BHK">1 BHK</option>
+          <option value="2BHK">2 BHK</option>
+          <option value="3BHK">3 BHK</option>
+        </select>
+      </div>
 
-      <label>Location:</label>
-      <input
-        type="text"
-        placeholder="e.g. Mumbai"
-        value={location}
-        onChange={(e) => setLocation(e.target.value)}
-      />
+      <div>
+        <label className="form-label">Location:</label>
+        <input
+          type="text"
+          className="form-control"
+          placeholder="e.g. Mumbai"
+          value={location}
+          onChange={(e) => setLocation(e.target.value)}
+        />
+      </div>
 
-      <label>Max Price: ₹{price}</label>
-      <input
-        type="range"
-        min="0"
-        max="10000"
-        step="500"
-        value={price}
-        onChange={(e) => setPrice(Number(e.target.value))}
-      />
+      <div>
+        <label className="form-label">Max Price: ₹{price}</label>
+        <input
+          type="range"
+          className="form-range"
+          min="0"
+          max="10000"
+          step="500"
+          value={price}
+          onChange={(e) => setPrice(Number(e.target.value))}
+        />
+      </div>
 
-      <label>AC Available:</label>
-      <button
-        onClick={handleToggleAc}
-        style={{
-          padding: '6px 12px',
-          backgroundColor: isAc === null ? '#ccc' : isAc ? '#4CAF50' : '#f44336',
-          color: '#fff',
-          border: 'none',
-          borderRadius: '20px',
-          cursor: 'pointer',
-        }}
-      >
-        {isAc === null ? 'Any' : isAc ? 'Yes' : 'No'}
-      </button>
+      <div>
+        <div className="form-check form-switch">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="acSwitch"
+            checked={isAc === true}
+            onChange={handleToggleAc}
+          />
+          <label className="form-check-label" htmlFor="acSwitch">
+            AC Available
+          </label>
+        </div>
+      </div>
 
-      <label>Available Rooms Only:</label>
-      <button
-        onClick={handleToggleAvailability}
-        style={{
-          padding: '6px 12px',
-          backgroundColor: available === null ? '#ccc' : available ? '#4CAF50' : '#f44336',
-          color: '#fff',
-          border: 'none',
-          borderRadius: '20px',
-          cursor: 'pointer',
-        }}
-      >
-        {available === null ? 'Any' : available ? 'Yes' : 'No'}
-      </button>
+      <div>
+        <div className="form-check form-switch">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="availableSwitch"
+            checked={available === true}
+            onChange={handleToggleAvailability}
+          />
+          <label className="form-check-label" htmlFor="availableSwitch">
+            Available Rooms Only
+          </label>
+        </div>
+      </div>
 
-      <label>Max Occupancy:</label>
-      <input
-        type="number"
-        placeholder="e.g. 2, 4"
-        value={occupancy}
-        onChange={(e) => setOccupancy(e.target.value)}
-      />
+      <div>
+        <label className="form-label">Max Occupancy:</label>
+        <input
+          type="number"
+          className="form-control"
+          placeholder="e.g. 2, 4"
+          value={occupancy}
+          onChange={(e) => setOccupancy(e.target.value)}
+        />
+      </div>
 
-      <button
-        onClick={handleApplyFilters}
-        style={{
-          marginTop: '10px',
-          padding: '8px 16px',
-          backgroundColor: '#007bff',
-          color: 'white',
-          border: 'none',
-          borderRadius: '4px',
-          cursor: 'pointer',
-        }}
-      >
+      <button className="btn btn-primary mt-2" onClick={handleApplyFilters}>
         Apply Changes
       </button>
     </div>

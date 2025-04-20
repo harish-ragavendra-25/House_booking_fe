@@ -14,7 +14,7 @@ const NavBarComponent = () => {
           <a className="navbar-brand" href="/dashboard">
             <img src="src/assets/house_book_logo.jpeg" alt="Bootstrap" width="50" height="40"/>
           </a>
-          <a className="navbar-brand fw-bold fs-4 text-secondary" href="/dashboard">
+          <a className="navbar-brand fw-bold  text-secondary" href="/dashboard">
             24/7 hrs Room Booking
           </a>
 
