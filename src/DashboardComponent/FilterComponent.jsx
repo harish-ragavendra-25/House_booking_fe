@@ -80,7 +80,7 @@ const FilterComponent = ({ applyFilters }) => {
             onChange={handleToggleAc}
           />
           <label className="form-check-label" htmlFor="acSwitch">
-            AC Available
+            AC Rooms only
           </label>
         </div>
       </div>
