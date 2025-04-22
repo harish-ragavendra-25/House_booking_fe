@@ -1,0 +1,112 @@
+[
+    {
+      "room_id": 1,
+      "room_type": "1BHK",
+      "location": "Chennai, Tamil Nadu",
+      "price": 1200.00,
+      "is_ac": true,
+      "description": "Cozy 1BHK room near the railway station.",
+      "availability": true,
+      "max_occupancy": 1,
+      "owner_id": 101
+    },
+    {
+      "room_id": 2,
+      "room_type": "2BHK",
+      "location": "Bangalore, Karnataka",
+      "price": 2200.00,
+      "is_ac": true,
+      "description": "Spacious 2BHK room with balcony view.",
+      "availability": false,
+      "max_occupancy": 2,
+      "owner_id": 102
+    },
+    {
+      "room_id": 3,
+      "room_type": "Studio",
+      "location": "Mumbai, Maharashtra",
+      "price": 4500.00,
+      "is_ac": true,
+      "description": "Luxury Studio with modern amenities.",
+      "availability": true,
+      "max_occupancy": 4,
+      "owner_id": 103
+    },
+    {
+      "room_id": 4,
+      "room_type": "1BHK",
+      "location": "Pune, Maharashtra",
+      "price": 1100.00,
+      "is_ac": false,
+      "description": "Affordable 1BHK room near college area.",
+      "availability": true,
+      "max_occupancy": 1,
+      "owner_id": 104
+    },
+    {
+      "room_id": 5,
+      "room_type": "2BHK",
+      "location": "Hyderabad, Telangana",
+      "price": 2000.00,
+      "is_ac": false,
+      "description": "2BHK room ideal for short stays.",
+      "availability": false,
+      "max_occupancy": 2,
+      "owner_id": 105
+    },
+    {
+      "room_id": 6,
+      "room_type": "Studio",
+      "location": "Delhi",
+      "price": 4800.00,
+      "is_ac": true,
+      "description": "Executive Studio in city center.",
+      "availability": true,
+      "max_occupancy": 3,
+      "owner_id": 106
+    },
+    {
+      "room_id": 7,
+      "room_type": "1BHK",
+      "location": "Coimbatore, Tamil Nadu",
+      "price": 950.00,
+      "is_ac": false,
+      "description": "Basic 1BHK room, budget-friendly.",
+      "availability": true,
+      "max_occupancy": 1,
+      "owner_id": 107
+    },
+    {
+      "room_id": 8,
+      "room_type": "2BHK",
+      "location": "Kochi, Kerala",
+      "price": 2100.00,
+      "is_ac": true,
+      "description": "Sea-facing 2BHK room with all amenities.",
+      "availability": true,
+      "max_occupancy": 2,
+      "owner_id": 108
+    },
+    {
+      "room_id": 9,
+      "room_type": "Studio",
+      "location": "Jaipur, Rajasthan",
+      "price": 4000.00,
+      "is_ac": true,
+      "description": "Heritage Studio in traditional haveli.",
+      "availability": false,
+      "max_occupancy": 3,
+      "owner_id": 109
+    },
+    {
+      "room_id": 10,
+      "room_type": "2BHK",
+      "location": "Ahmedabad, Gujarat",
+      "price": 1900.00,
+      "is_ac": false,
+      "description": "Comfortable 2BHK room near the airport.",
+      "availability": true,
+      "max_occupancy": 2,
+      "owner_id": 110
+    }
+]  

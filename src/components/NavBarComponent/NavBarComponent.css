@@ -1,0 +1,47 @@
+  /* Add hover effect */
+.hover-effect {
+    text-decoration: none;
+    position: relative;  /* Required to position the pseudo-element */
+    overflow: hidden; 
+    color: black;   /* Ensures the line stays inside the button */
+    transition: all 0.2s ease;  /* Apply smooth transition for all properties */
+}
+
+.hover-effect::after {
+    content: '';  /* Create a pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #91c6ff;  /* Line color */
+    transition: width 0.3s ease, left 0.3s ease;  /* Animate width and left position */
+}
+
+
+.hover-effect:hover {
+    font-weight: bolder;  /* Make text bold on hover */
+    color: #007bff;  /* Change text color on hover */
+}
+
+.hover-effect:hover::after {
+    width: 100%;
+    left: 0;  /* Move the line from the center to the left edge */
+}
+
+/* Special style for "Logout" */
+.logout-text { /* Soft red color */
+    color: black;
+    cursor: pointer;  /* Make it look clickable */
+    transition: all 0.5s ease;  /* Smooth transition for hover effect */
+}
+
+.logout-text:hover {
+    font-weight: bolder;
+    color: #721c24; 
+    transform: scale(1.05);  /* Slight scale up */
+}
+
+.logout-text:hover::after {
+    background-color: #d9534f;  /* Red color for the line */
+}
